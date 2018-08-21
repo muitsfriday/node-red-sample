@@ -43,3 +43,7 @@ RED.start();
 เสร็จแล้วเข้าไปที่
 `host:8000/red` สำหรับหน้าสร้าง node
 `host:8000/api` เรียก api ที่เราสร้างเอาไว้ใน node-red
+
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
