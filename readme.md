@@ -57,3 +57,10 @@ Inline-style:
 ข้อมูลที่ส่งมากะ BODY เช่น POST, PUT จะแนบมากับ `msg.payload` แทน
 
 จากภาพคือการกำหนด endpoint /article/:id id จะส่งต่อผ่าน `msg.req.params.id`
+
+
+## สร้าง Response
+Inline-style: 
+![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image3.png?raw=true "Logo Title Text 1")
+
+สร้าง http response โดย node นี้จะนำ msg.payload ตอบออกไปให้ สามารถ set status code / header ได้
