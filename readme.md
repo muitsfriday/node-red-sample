@@ -47,3 +47,13 @@ RED.start();
 
 Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image1.png?raw=true "Logo Title Text 1")
+
+## Node HTTP
+Inline-style: 
+![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image2.png?raw=true "Logo Title Text 1")
+
+สร้าง endpoint เรียกเข้า โดยกำหนด method, path ได้ สามารถเจาะช่อง param ได้ด้วย :paramname คล้ายๆ express ข้อมูลจะส่งมาทาง `msg.req.params`
+
+ข้อมูลที่ส่งมากะ BODY เช่น POST, PUT จะแนบมากับ `msg.payload` แทน
+
+จากภาพคือการกำหนด endpoint /article/:id id จะส่งต่อผ่าน `msg.req.params.id`
