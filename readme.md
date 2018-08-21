@@ -64,3 +64,15 @@ Inline-style:
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image3.png?raw=true "Logo Title Text 1")
 
 สร้าง http response โดย node นี้จะนำ msg.payload ตอบออกไปให้ สามารถ set status code / header ได้
+
+
+## แก้ไข response
+การจะแก้ไข response ที่ออกไป ใช้วิธีเชื่อม node **function**
+
+Inline-style: 
+![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image4.png?raw=true "Logo Title Text 1")
+
+การเขียน fuuction เขัียนได้แบบ javascript เลย จะต้อง return msg ที่มี req, res ออกไป ไม่งั้น node http / http-response จะทำงานไม่ได้
+
+เมื่อเขียน function แล้วให้เชื่อมเส้นใหม่ โดย ลากจาก HTTP ---> Function ---> HTTP response
+ดังตัวอย่าง 
