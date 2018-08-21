@@ -101,3 +101,13 @@ Inline-style:
 จะไม่พบผลลัพธ์และแสดง status code เป็น 400
 Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image7.png?raw=true "Logo Title Text 1")
+
+
+## node  อื่นๆที่น่าสนใจ
+### Debug
+debug เอาไว้ดูข้อความ สามารถดูได้ทั้ง msg หรือจะดูแค่ payload ก็ยังได้
+
+Inline-style: 
+![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image8.png?raw=true "Logo Title Text 1")
+Inline-style: 
+![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image9.png?raw=true "Logo Title Text 1")
