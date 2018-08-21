@@ -45,11 +45,9 @@ RED.start();
 `host:8000/api` เรียก api ที่เราสร้างเอาไว้ใน node-red
 
 
-Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image1.png?raw=true "Logo Title Text 1")
 
 ## Node HTTP
-Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image2.png?raw=true "Logo Title Text 1")
 
 สร้าง endpoint เรียกเข้า โดยกำหนด method, path ได้ สามารถเจาะช่อง param ได้ด้วย :paramname คล้ายๆ express ข้อมูลจะส่งมาทาง `msg.req.params`
@@ -60,7 +58,6 @@ Inline-style:
 
 
 ## สร้าง Response
-Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image3.png?raw=true "Logo Title Text 1")
 
 สร้าง http response โดย node นี้จะนำ msg.payload ตอบออกไปให้ สามารถ set status code / header ได้
@@ -69,7 +66,6 @@ Inline-style:
 ## แก้ไข response
 การจะแก้ไข response ที่ออกไป ใช้วิธีเชื่อม node **function**
 
-Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image4.png?raw=true "Logo Title Text 1")
 
 การเขียน fuuction เขัียนได้แบบ javascript เลย จะต้อง return msg ที่มี req, res ออกไป ไม่งั้น node http / http-response จะทำงานไม่ได้
@@ -81,7 +77,6 @@ Inline-style:
 
 สร้าง node switch มีหน้าที่ทำทางแยกของงานตามเงื่อนไขของ msg ในที่นี้เราอยากรู้ว่า msg.payload.data เป็น null ไหม ถ้าไม่ null ให้ไปทางออกที่ 1 ไม่งั้นไปทางออกที่ 2
 
-Inline-style: 
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image5.png?raw=true "Logo Title Text 1")
 
 
@@ -94,12 +89,12 @@ Inline-style:
 เมื่อพร้อมแล้วก็กด Deploy แล้วลองเทสได้เลย
 
 เมื่อเข้าไปที่ /api/article/1 จะได้ผลลัพธ์ดังนี้
-Inline-style: 
+
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image6.png?raw=true "Logo Title Text 1")
 
 เมื่อเข้าไปที่ /api/article/2
 จะไม่พบผลลัพธ์และแสดง status code เป็น 400
-Inline-style: 
+
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image7.png?raw=true "Logo Title Text 1")
 
 
@@ -107,7 +102,9 @@ Inline-style:
 ### Debug
 debug เอาไว้ดูข้อความ สามารถดูได้ทั้ง msg หรือจะดูแค่ payload ก็ยังได้
 
-Inline-style: 
+setting ของ node debug เชื่อมไว้กับ http node ดักข้อความจาก HTTP
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image8.png?raw=true "Logo Title Text 1")
-Inline-style: 
+
+เมื่อมีข้อความ เข้ามา สามารถดู msg ได้จากช่อ debug
+
 ![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image9.png?raw=true "Logo Title Text 1")
