@@ -76,3 +76,9 @@ Inline-style:
 
 เมื่อเขียน function แล้วให้เชื่อมเส้นใหม่ โดย ลากจาก HTTP ---> Function ---> HTTP response
 ดังตัวอย่าง 
+
+## ทางแยกเพื่อสร้าง 404
+
+สร้าง node switch มีหน้าที่ทำทางแยกของงานตามเงื่อนไขของ msg ในที่นี้เราอยากรู้ว่า msg.payload.data เป็น null ไหม
+Inline-style: 
+![alt text](https://github.com/muitsfriday/node-red-sample/blob/master/images/image5.png?raw=true "Logo Title Text 1")
